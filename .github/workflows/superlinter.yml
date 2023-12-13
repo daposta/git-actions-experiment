@@ -16,3 +16,7 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Debug Super-Linter Output
+        run: |
+          cat /tmp/linter.log
